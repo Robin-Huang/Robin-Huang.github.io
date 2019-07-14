@@ -102,10 +102,15 @@
 <meta property="og:site_name" content="Robin">
 <meta property="og:description" content="透過 Github Pages 和 Hexo 建立自己的個人網頁，並使用 Next 主題">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2019-07-13T15:39:32.960Z">
+<meta property="og:image" content="http://yoursite.com/2019/07/13/GitHub-Pages-Hexo-Next/github_repository.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/07/13/GitHub-Pages-Hexo-Next/disqus_signup.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/07/13/GitHub-Pages-Hexo-Next/disqus_choose.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/07/13/GitHub-Pages-Hexo-Next/disqus_on_site.jpg">
+<meta property="og:updated_time" content="2019-07-14T02:18:05.477Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub Pages + Hexo + NexT 建立個人網頁">
 <meta name="twitter:description" content="透過 Github Pages 和 Hexo 建立自己的個人網頁，並使用 Next 主題">
+<meta name="twitter:image" content="http://yoursite.com/2019/07/13/GitHub-Pages-Hexo-Next/github_repository.jpg">
 
 
 
@@ -325,13 +330,23 @@
                 
               
 
-              <time title="創建時間：2019-07-13 15:07:45 / 修改時間：23:39:32" itemprop="dateCreated datePublished" datetime="2019-07-13T15:07:45+08:00">2019-07-13</time>
+              <time title="創建時間：2019-07-13 15:07:45" itemprop="dateCreated datePublished" datetime="2019-07-13T15:07:45+08:00">2019-07-13</time>
             </span>
           
 
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新於</span>
+                
+                <time title="修改時間：2019-07-14 10:18:05" itemprop="dateModified" datetime="2019-07-14T10:18:05+08:00">2019-07-14</time>
+              </span>
             
           
 
@@ -354,6 +369,18 @@
 
           
             
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">評論數：</span>
+                <a href="/2019/07/13/GitHub-Pages-Hexo-Next/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/13/GitHub-Pages-Hexo-Next/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -431,9 +458,11 @@
 <h3 id="新增文章"><a href="#新增文章" class="headerlink" title="新增文章"></a>新增文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new post &lt;title&gt;</span><br></pre></td></tr></table></figure>
 
 <p>在 <strong><code>./source/_posts</code></strong> 底下就會看到產生一個 <strong><code>&lt;title&gt;.md</code></strong> 的檔案，啟動 server 就會看到此篇文章</p>
+<h3 id="崁入圖片"><a href="#崁入圖片" class="headerlink" title="崁入圖片"></a>崁入圖片</h3><p>將圖片檔放到 <strong><code>./source/_posts/&lt;title&gt;/</code></strong> 目錄下，然後在 <strong><code>./source/_posts/&lt;title&gt;.md</code></strong> 中加入以下程式</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img image.jpg %&#125;</span><br></pre></td></tr></table></figure>
+
 <hr>
-<h2 id="文章分類"><a href="#文章分類" class="headerlink" title="文章分類"></a>文章分類</h2><p>新增分類頁面來快速找到特定類別的文章</p>
-<p>新建一個 <strong><code>categories</code></strong> 頁面</p>
+<h2 id="文章分類"><a href="#文章分類" class="headerlink" title="文章分類"></a>文章分類</h2><p>新建一個 <strong><code>categories</code></strong> 頁面</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page <span class="string">"categories"</span></span><br></pre></td></tr></table></figure>
 
 <p>打開 <strong><code>./source/categories/index.md</code></strong> ，加入 type 欄位</p>
@@ -447,6 +476,10 @@
 
 <hr>
 <h2 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h2><p>到自己的 GitHub 頁面建立一個專案，名稱為 <strong><code>&lt;username&gt;.github.io</code></strong></p>
+<center>
+<img src="/2019/07/13/GitHub-Pages-Hexo-Next/github_repository.jpg">
+</center>
+
 <p>安裝 <a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">hexo-deployer-git</a></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
@@ -455,6 +488,23 @@
 
 <p>部屬到 GitHub Pages</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="留言功能"><a href="#留言功能" class="headerlink" title="留言功能"></a>留言功能</h2><p>到 <a href="https://disqus.com/" target="_blank" rel="noopener">Disqus</a> 註冊帳號</p>
+<center>
+<img src="/2019/07/13/GitHub-Pages-Hexo-Next/disqus_signup.jpg">
+</center>
+
+<p>選擇 I want to install Disqus on my site</p>
+<center>
+<img src="/2019/07/13/GitHub-Pages-Hexo-Next/disqus_choose.jpg">
+</center>
+
+<p>再啟動一次 server 就會看到 Disqus 留言區了</p>
+<center>
+<img src="/2019/07/13/GitHub-Pages-Hexo-Next/disqus_on_site.jpg">
+</center>
+
       
     </div>
 
@@ -501,6 +551,13 @@
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
 
   
 
@@ -619,7 +676,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#軟體需求"><span class="nav-number">1.</span> <span class="nav-text">軟體需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝流程"><span class="nav-number">2.</span> <span class="nav-text">安裝流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-NexT-主題"><span class="nav-number">3.</span> <span class="nav-text">使用 NexT 主題</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#語言設定"><span class="nav-number">3.1.</span> <span class="nav-text">語言設定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程式碼主題"><span class="nav-number">3.2.</span> <span class="nav-text">程式碼主題</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sheme-設定"><span class="nav-number">3.3.</span> <span class="nav-text">Sheme 設定</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作者設定"><span class="nav-number">4.</span> <span class="nav-text">作者設定</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#社群連結"><span class="nav-number">4.1.</span> <span class="nav-text">社群連結</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#建立文章"><span class="nav-number">5.</span> <span class="nav-text">建立文章</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#新增文章"><span class="nav-number">5.1.</span> <span class="nav-text">新增文章</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章分類"><span class="nav-number">6.</span> <span class="nav-text">文章分類</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub-Pages"><span class="nav-number">7.</span> <span class="nav-text">GitHub Pages</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#軟體需求"><span class="nav-number">1.</span> <span class="nav-text">軟體需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝流程"><span class="nav-number">2.</span> <span class="nav-text">安裝流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-NexT-主題"><span class="nav-number">3.</span> <span class="nav-text">使用 NexT 主題</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#語言設定"><span class="nav-number">3.1.</span> <span class="nav-text">語言設定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程式碼主題"><span class="nav-number">3.2.</span> <span class="nav-text">程式碼主題</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sheme-設定"><span class="nav-number">3.3.</span> <span class="nav-text">Sheme 設定</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作者設定"><span class="nav-number">4.</span> <span class="nav-text">作者設定</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#社群連結"><span class="nav-number">4.1.</span> <span class="nav-text">社群連結</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#建立文章"><span class="nav-number">5.</span> <span class="nav-text">建立文章</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#新增文章"><span class="nav-number">5.1.</span> <span class="nav-text">新增文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#崁入圖片"><span class="nav-number">5.2.</span> <span class="nav-text">崁入圖片</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章分類"><span class="nav-number">6.</span> <span class="nav-text">文章分類</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub-Pages"><span class="nav-number">7.</span> <span class="nav-text">GitHub Pages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#留言功能"><span class="nav-number">8.</span> <span class="nav-text">留言功能</span></a></li></ol></div>
             
 
           </div>
@@ -766,6 +823,38 @@
   
 
   
+  
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://Robin-Huang.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://yoursite.com/2019/07/13/GitHub-Pages-Hexo-Next/";
+    this.page.identifier = "2019/07/13/GitHub-Pages-Hexo-Next/";
+    this.page.title = 'GitHub Pages + Hexo + NexT 建立個人網頁';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://Robin-Huang.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    window.addEventListener('load', loadComments, false);
+  
+</script>
+
+
+
 
 
   
