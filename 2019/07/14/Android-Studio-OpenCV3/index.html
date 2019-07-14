@@ -95,13 +95,36 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Robin">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="透過 Android Studio 結合 OpenCV 做影像處理和電腦視覺的 APP 應用">
+<meta name="keywords" content="Android Studio,OpenCV">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android Studio + OpenCV3 安裝">
+<meta property="og:url" content="http://yoursite.com/2019/07/14/Android-Studio-OpenCV3/index.html">
 <meta property="og:site_name" content="Robin">
+<meta property="og:description" content="透過 Android Studio 結合 OpenCV 做影像處理和電腦視覺的 APP 應用">
 <meta property="og:locale" content="zh-TW">
+<meta property="og:image" content="http://yoursite.com/2019/07/14/Android-Studio-OpenCV3/android_studio_website.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/07/14/Android-Studio-OpenCV3/opencv_releases.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/07/14/Android-Studio-OpenCV3/opencv_android_package.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/07/14/Android-Studio-OpenCV3/android_studio_start.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/07/14/Android-Studio-OpenCV3/android_studio_create_project.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/07/14/Android-Studio-OpenCV3/android_studio_project_name.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/07/14/Android-Studio-OpenCV3/android_studio_import_module.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/07/14/Android-Studio-OpenCV3/android_studio_module_path.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/07/14/Android-Studio-OpenCV3/minSdk_targetSdk_version_error.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/07/14/Android-Studio-OpenCV3/minSdk_targetSdk_version_remove.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/07/14/Android-Studio-OpenCV3/build_gradle_setting.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/07/14/Android-Studio-OpenCV3/create_jni_folder.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/07/14/Android-Studio-OpenCV3/jni_folder_setting.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/07/14/Android-Studio-OpenCV3/opencv_android_sdk_libs.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/07/14/Android-Studio-OpenCV3/android_studio_project_structure.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/07/14/Android-Studio-OpenCV3/project_structure_module_dependency.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/07/14/Android-Studio-OpenCV3/project_structure_module_dependency_opencv.jpg">
+<meta property="og:updated_time" content="2019-07-14T06:33:48.970Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Robin">
+<meta name="twitter:title" content="Android Studio + OpenCV3 安裝">
+<meta name="twitter:description" content="透過 Android Studio 結合 OpenCV 做影像處理和電腦視覺的 APP 應用">
+<meta name="twitter:image" content="http://yoursite.com/2019/07/14/Android-Studio-OpenCV3/android_studio_website.jpg">
 
 
 
@@ -109,7 +132,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/14/Android-Studio-OpenCV3/">
 
 
 
@@ -119,7 +142,7 @@
   };
 </script>
 
-  <title>Robin</title>
+  <title>Android Studio + OpenCV3 安裝 | Robin</title>
   
 
 
@@ -167,8 +190,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -206,7 +228,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -262,9 +284,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -296,10 +318,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/14/Android-Studio-OpenCV3/" class="post-title-link" itemprop="url">Android Studio + OpenCV3 安裝</a>
+          <h1 class="post-title" itemprop="name headline">Android Studio + OpenCV3 安裝
+
               
             
           </h1>
@@ -395,23 +415,103 @@
       
 
       
-        
-          <p>透過 Android Studio 結合 OpenCV 做影像處理和電腦視覺的 APP 應用</p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/07/14/Android-Studio-OpenCV3/#more" rel="contents">
-                閱讀全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
+        <p>透過 Android Studio 結合 OpenCV 做影像處理和電腦視覺的 APP 應用</p>
+<a id="more"></a>
+
+<h2 id="軟體需求"><a href="#軟體需求" class="headerlink" title="軟體需求"></a>軟體需求</h2><p><a href="https://developer.android.com/studio" target="_blank" rel="noopener">Android Studio</a><br><a href="https://opencv.org/releases/" target="_blank" rel="noopener">OpenCV 3.X (Android)</a></p>
+<hr>
+<h2 id="安裝流程"><a href="#安裝流程" class="headerlink" title="安裝流程"></a>安裝流程</h2><p>下載 Android Studio</p>
+<center>
+<img src="/2019/07/14/Android-Studio-OpenCV3/android_studio_website.jpg">
+</center><br>
+
+<p>下載 OpenCV 3.X Android 安裝包</p>
+<center>
+<img src="/2019/07/14/Android-Studio-OpenCV3/opencv_releases.jpg">
+</center><br>
+
+<p>解壓縮 OpenCV 3.x Android</p>
+<center>
+<img src="/2019/07/14/Android-Studio-OpenCV3/opencv_android_package.jpg">
+</center><br>
+
+<p>安裝 Android Studio，並設定好 Android SDK、NDK、Build-Tools 等套件</p>
+<hr>
+<h2 id="Android-Studio-設定"><a href="#Android-Studio-設定" class="headerlink" title="Android Studio 設定"></a>Android Studio 設定</h2><p>開啟 Android Studio，選擇建立新專案</p>
+<center>
+<img src="/2019/07/14/Android-Studio-OpenCV3/android_studio_start.jpg">
+</center><br>
+
+<p>選擇 Empty Project</p>
+<center>
+<img src="/2019/07/14/Android-Studio-OpenCV3/android_studio_create_project.jpg">
+</center><br>
+
+<p>設定 Project 名稱、路徑</p>
+<center>
+<img src="/2019/07/14/Android-Studio-OpenCV3/android_studio_project_name.jpg">
+</center><br>
+
+<p>File -&gt; New -&gt; Import Module</p>
+<center>
+<img src="/2019/07/14/Android-Studio-OpenCV3/android_studio_import_module.jpg">
+</center><br>
+
+<p>指定 OpenCV Android Module 路徑，會在解壓縮資料夾路徑下的 <strong><code>./sdk/java/</code></strong> ，指定完會自動偵測模組名稱</p>
+<center>
+<img src="/2019/07/14/Android-Studio-OpenCV3/android_studio_module_path.jpg">
+</center><br>
+
+<p>模組設定完後可能會跳出以下 Error ，表示 minSdkVersion 和 targetSdkVersion 不應該被宣告在 manifest 檔案裡</p>
+<center>
+<img src="/2019/07/14/Android-Studio-OpenCV3/minSdk_targetSdk_version_error.jpg">
+</center><br>
+
+<p>進入 <strong><code>./openCVLibrary3XX/src/main/AndroidManifest.xml</code></strong> 中，將紅框中的設定刪掉</p>
+<center>
+<img src="/2019/07/14/Android-Studio-OpenCV3/minSdk_targetSdk_version_remove.jpg">
+</center><br>
+
+<p>開啟 <strong><code>openCVLibrary3XX</code></strong> 的 <strong><code>build.gradle</code></strong> ，把 compileSdkVersion、buildToolsVersion、minSdkVersion、targetSdkVersion 設定與 <strong><code>app</code></strong> 中的 <strong><code>build.gradle</code></strong> 一致</p>
+<center>
+<img src="/2019/07/14/Android-Studio-OpenCV3/build_gradle_setting.jpg">
+</center><br>
+
+<p>建立一個 <strong><code>jni</code></strong> 資料夾</p>
+<center><br>
+<img src="/2019/07/14/Android-Studio-OpenCV3/create_jni_folder.jpg">
+</center><br>
+
+<p>勾選 Change Folder Location ，並將資料夾名稱改為 <strong><code>jniLibs</code></strong> ，Finish</p>
+<center><br>
+<img src="/2019/07/14/Android-Studio-OpenCV3/jni_folder_setting.jpg">
+</center><br>
+
+<p>將 OpenCV 3.XX Android 的 libs 檔複製到剛剛建立的 <strong><code>jniLibs</code></strong> 資料夾</p>
+<center><br>
+<img src="/2019/07/14/Android-Studio-OpenCV3/opencv_android_sdk_libs.jpg">
+</center><br>
+
+<center>
+<img src="/2019/07/14/Android-Studio-OpenCV3/android_studio_project_structure.jpg">
+</center><br>
+
+<p>開啟 Project Structure，對 <strong><code>app</code></strong> 新增 Module Dependency</p>
+<center>
+<img src="/2019/07/14/Android-Studio-OpenCV3/project_structure_module_dependency.jpg">
+</center><br>
+
+<p>選擇 <strong><code>openCVLibrary3XX</code></strong></p>
+<center>
+<img src="/2019/07/14/Android-Studio-OpenCV3/project_structure_module_dependency_opencv.jpg">
+</center><br>
       
     </div>
 
     
 
+    
+      
     
 
     
@@ -429,207 +529,41 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/13/GitHub-Pages-Hexo-Next/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Robin">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Robin">
-    </span>
-
-    
-      <header class="post-header">
-
         
+          
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/13/GitHub-Pages-Hexo-Next/" class="post-title-link" itemprop="url">GitHub Pages + Hexo + NexT 建立個人網頁</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-
+        <div class="post-tags">
           
+            <a href="/tags/Android-Studio/" rel="tag"># Android Studio</a>
           
+            <a href="/tags/OpenCV/" rel="tag"># OpenCV</a>
           
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">發表於</span>
-              
-
-              
-                
-              
-
-              <time title="創建時間：2019-07-13 15:07:45" itemprop="dateCreated datePublished" datetime="2019-07-13T15:07:45+08:00">2019-07-13</time>
-            </span>
-          
-
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新於</span>
-                
-                <time title="修改時間：2019-07-14 14:33:58" itemprop="dateModified" datetime="2019-07-14T14:33:58+08:00">2019-07-14</time>
-              </span>
-            
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分類於</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">評論數：</span>
-                <a href="/2019/07/13/GitHub-Pages-Hexo-Next/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/13/GitHub-Pages-Hexo-Next/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <p>透過 Github Pages 和 Hexo 建立自己的個人網頁，並使用 Next 主題</p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/07/13/GitHub-Pages-Hexo-Next/#more" rel="contents">
-                閱讀全文 &raquo;
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/13/GitHub-Pages-Hexo-Next/" rel="next" title="GitHub Pages + Hexo + NexT 建立個人網頁">
+                <i class="fa fa-chevron-left"></i> GitHub Pages + Hexo + NexT 建立個人網頁
               </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
+            
+          </div>
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -639,14 +573,22 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -666,8 +608,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            本站概要
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -766,6 +717,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#軟體需求"><span class="nav-number">1.</span> <span class="nav-text">軟體需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝流程"><span class="nav-number">2.</span> <span class="nav-text">安裝流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Android-Studio-設定"><span class="nav-number">3.</span> <span class="nav-text">Android Studio 設定</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -891,6 +859,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
 
   <script src="/js/next-boot.js?v=7.2.0"></script>
 
@@ -916,9 +888,28 @@
 </script>
 
 
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://yoursite.com/2019/07/14/Android-Studio-OpenCV3/";
+    this.page.identifier = "2019/07/14/Android-Studio-OpenCV3/";
+    this.page.title = 'Android Studio + OpenCV3 安裝';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://Robin-Huang.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    window.addEventListener('load', loadComments, false);
+  
+</script>
 
 
 
+
+
+  
 
 
   
